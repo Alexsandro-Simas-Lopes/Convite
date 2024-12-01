@@ -1,0 +1,54 @@
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg, .bgimg2, .bgimg3, .bgimg4 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg {background-image: url("/img/FJn5.jpg")}
+.bgimg2 {background-image: url("/img/FJn4.jpg")}
+
+
+.profile-area{display:flex;justify-content:center;align-items:center}
+.profile-area .outer-circle{width:26rem;height:26rem;border:1px solid var(--color-primary);border-radius:50%;position:relative;animation:move 30s linear infinite}
+@keyframes move {
+to{transform:rotate(360deg)}
+}
+.profile-area .outer-circle span{width:600px;height:480px;float:right;width:4rem;height:4rem;border-radius:50%;position:absolute;background:var(--color-white);color:var(--color-primary);justify-content:center;align-items:center;box-shadow:0 0 1rem var(--color-primary-light);display:flex}
+.profile-area .outer-circle span:nth-child(1){left:calc(50% - 2rem);top:-2rem}
+.profile-area .outer-circle span:nth-child(2){right:-2rem;top:calc(50% - 2rem)}
+.profile-area .outer-circle span:nth-child(3){left:-2rem;top:calc(50% - 2rem)}
+.profile-area .outer-circle span:nth-child(4){bottom:-2rem;left:calc(50% - 2rem)}
+.profile-area .inner-circle{position:absolute;width:20rem;height:20rem;border-radius:50%;overflow:hidden}
+.chakra-heading{font-family:'Roboto',sans-serif}
+@media screen and (max-width: 999px) {
+.chakra-heading{font-size:6.75vw}
+}
+@media screen and (max-width: 575px) {
+  
+.profile-area .outer-circle{width:55vw;height:55vw;border:1px solid var(--color-primary);border-radius:50%;position:relative;animation:move 30s linear infinite}
+.profile-area .inner-circle{position:absolute;width:40vw;height:40vw;border-radius:50%;overflow:hidden}
+}
+@media screen and (max-width: 450px) {
+.profile-area .outer-circle span{width:400px;height:280px;float:right;width:10vw;height:10vw;border-radius:50%;position:absolute;background:var(--color-white);color:var(--color-primary);justify-content:center;align-items:center;box-shadow:0 0 1rem var(--color-primary-light);display:flex}
+.profile-area .outer-circle span:nth-child(1){left:calc(50% - 0rem);top:-4vw}
+.profile-area .outer-circle span:nth-child(2){right:-4vw;top:calc(50% - 0rem)}
+.profile-area .outer-circle span:nth-child(3){left:-4vw;top:calc(50% - 2rem)}
+.profile-area .outer-circle span:nth-child(4){bottom:-4vw;left:calc(50% - 2rem)}
+}
+
+.img-container {
+  width: 40vw; /* Largura desejada */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  overflow: hidden; /* Garante que nada saia dos limites */
+  background-color: #f0f0f0; /* Opcional: cor de fundo */
+}
+
+.image-container img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: contain;  /*Mantém a proporção e as bordas visíveis */
+}
